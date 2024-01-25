@@ -23,38 +23,55 @@
 					<input type="file" class="form-control-file" id="exampleFormControlFile1">
 				</div>
 			</form>
-			<!-- dropdown for sorting -->
-			<div class="dropdown">
-				<button class="btn btn-white dropdown-toggle" type="button" id="dropdownMenuButton"
-					data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					Sort by
-				</button>
-				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-					<a class="dropdown-item" href="#">Newest date</a>
-					<a class="dropdown-item" href="#">Oldest date</a>
-					<a class="dropdown-item" href="#">Most likes</a>
-				</div>
+			<div class="form-group">
+				<label for="exampleTextarea">Example textarea</label>
+				<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
 			</div>
 		</div>
+		<!-- dropdown for sorting -->
+		<div class="btn-group">
+			<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+				data-bs-auto-close="true" aria-expanded="false">
+				Sort by
+			</button>
+			<ul class="dropdown-menu">
+				<li><a class="dropdown-item" href="#">Newest post</a></li>
+				<li><a class="dropdown-item" href="#">Oldest Post</a></li>
+				<li><a class="dropdown-item" href="#">Most likes</a></li>
+			</ul>
+		</div>
+		<h2>Feed</h2>
 		<!-- dropdown for sorting finish -->
-		<!-- feed posts -->
-		<div class="row">
-			<div class="col-12 col-sm-6 col-md-4 border">
+		<!-- feed starts -->
+		<!-- card 1 -->
+		<div class="card shadow mb-3">
+			<div class="card-body">
+				<h5 class="card-title">plant_vibes</h5>
 				<button type="button" class="btn-close" aria-label="Close"></button>
-				<img src="../images/small_plant.jpg" alt="#">
-				<p>After five weeks of patient nurturing, the once dormant seed has undergone a remarkable
+			</div>
+			<img style="height: 200px; width: 100%; display: block;" src="../images/small_plant.jpg" alt="Card image">
+			<div class="card-body">
+				<p class="card-text">After five weeks of patient nurturing, the once dormant seed has undergone a
+					remarkable
 					transformation. From a tiny, unassuming kernel, it has sprouted into a vibrant and delicate
-					sapling, reaching towards the sunlight with newfound vitality.
-				</p>
+					sapling, reaching towards the sunlight with newfound vitality.</p>
 				<p>
 					@plant_vibes #plants #growing #planting #ecoliving
 				</p>
-
 			</div>
-			<div class="col-12 col-sm-6 col-md-4 border">
+			<div class="card-footer text-muted">
+				2 days ago
+			</div>
+		</div>
+		<!-- card 2 -->
+		<div class="card shadow mb-3">
+			<div class="card-body">
+				<h5 class="card-title">garden_lover</h5>
 				<button type="button" class="btn-close" aria-label="Close"></button>
-				<img src="../images/gardenwork.jpg" alt="#">
-				<p>
+			</div>
+			<img style="height: 200px; width: 100%; display: block;" src="../images/gardenwork.jpg" alt="Card image">
+			<div class="card-body">
+				<p class="card-text">
 					Gardens are vibrant sanctuaries, where colorful blooms dance in harmony with the gentle rustle
 					of leaves, inviting serenity and connection with nature.
 				</p>
@@ -62,16 +79,28 @@
 					#GardenMagic #NatureInBloom #GreenOasis
 				</p>
 			</div>
-			<div class="col-12 col-sm-6 col-md-4 border">
-				<button type="button" class="btn-close" aria-label="Close"></button>
-				<img src="../images/garden.jpg" alt="#">
-				<p>
+			<div class="card-footer text-muted">
+				2 days ago
+			</div>
+		</div>
+		<!-- card 3 -->
+		<div class="card shadow mb-3">
+			<div class="card-body">
+				<h5 class="card-title">green_garden</h5>
+			</div>
+			<button type="button" class="btn-close" aria-label="Close"></button>
+			<img style="height: 200px; width: 100%; display: block;" src="../images/garden.jpg" alt="Card image">
+			<div class="card-body">
+				<p class="card-text">
 					In the heart of every garden, whispers of tranquility unfold as each petal unfurls, telling
 					stories of growth, resilience, and the timeless beauty of the natural world.
 				</p>
 				<p>
 					#GardenStories #BlossomingBeauty #ZenRetreat
 				</p>
+			</div>
+			<div class="card-footer text-muted">
+				3 days ago
 			</div>
 		</div>
 		<!-- feed posts end -->
