@@ -1,0 +1,9 @@
+@import "variables";
+
+.btn {
+	&-unique {
+		@include button-variant($success, white);
+
+		font-family: Calibri;
+	}
+}

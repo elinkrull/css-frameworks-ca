@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PlantPals | Feed Page</title>
+	<meta name="description"
+		content="Here you can see the posts that other peolpe you follow have postet in PlantPals, and you can also write a new post to your own profile">
+	<link rel="stylesheet" href="../dist/css/index.css">
+	<script defer src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</head>
+
+<body">
+	<header>
+		<div class="text-center bg-primary p-3 text-info">
+			<h1>PlantPals</h1>
+		</div>
+		<!-- New post form start-->
+		<div class="container">
+			<h2 class="my-5">For you</h2>
+			<p class="m-0">+ Add new post</p>
+			<form class="was-validated">
+				<div class="mb-3">
+					<label for="validationTextarea" class="form-label"></label>
+					<textarea class="form-control" id="validationTextarea" placeholder="Required example textarea"
+						required></textarea>
+					<div class="invalid-feedback">
+						Add text
+					</div>
+				</div>
+
+				<div class="mb-3">
+					<input type="file" class="form-control" aria-label="file example" required>
+					<div class="invalid-feedback">Example invalid form file feedback</div>
+				</div>
+
+				<div class="mb-3">
+					<button class="btn btn-primary text-info" type="submit" disabled>Post</button>
+				</div>
+			</form>
+			<!-- New post form end -->
+
+			<!-- feed starts -->
+			<h2>Feed</h2>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="mb-3">
+							<select class="form-select" required aria-label="select example">
+								<option value="">Sort by</option>
+								<option value="1">Newest Post</option>
+								<option value="2">Oldest post</option>
+								<option value="3">Most likes</option>
+							</select>
+						</div>
+					</div>
+				</div>
+
+				<!-- card 1 -->
+				<div class="row justify-content-center">
+					<div class="card shadow col-md-3">
+						<div class="card-body">
+							<h5 class="card-title">plant_vibes</h5>
+							<button type="button" class="btn-close" aria-label="Close"></button>
+						</div>
+						<img style="height: 200px; width: 100%; display: block;" src="../images/small_plant.jpg"
+							alt="Card image">
+						<div class="card-body">
+							<p class="card-text">After five weeks of patient nurturing, the once dormant seed has
+								undergone
+								a
+								remarkable
+								transformation. From a tiny, unassuming kernel, it has sprouted into a vibrant and
+								delicate
+								sapling, reaching towards the sunlight with newfound vitality.</p>
+							<p>
+								@plant_vibes #plants #growing #planting #ecoliving
+							</p>
+						</div>
+						<div class="card-footer text-muted">
+							2 days ago
+						</div>
+					</div>
+					<!-- card 2 -->
+					<div class="card shadow col-md-3">
+						<div class="card-body">
+							<h5 class="card-title">garden_lover</h5>
+							<button type="button" class="btn-close" aria-label="Close"></button>
+						</div>
+						<img style="height: 200px; width: 100%; display: block;" src="../images/gardenwork.jpg"
+							alt="Card image">
+						<div class="card-body">
+							<p class="card-text">
+								Gardens are vibrant sanctuaries, where colorful blooms dance in harmony with the gentle
+								rustle
+								of leaves, inviting serenity and connection with nature.
+							</p>
+							<p>
+								#GardenMagic #NatureInBloom #GreenOasis
+							</p>
+						</div>
+						<div class="card-footer text-muted">
+							2 days ago
+						</div>
+					</div>
+					<!-- card 3 -->
+					<div class="card shadow col-md-3">
+						<div class="card-body">
+							<h5 class="card-title">green_garden</h5>
+						</div>
+						<button type="button" class="btn-close" aria-label="Close"></button>
+						<img style="height: 200px; width: 100%; display: block;" src="../images/garden.jpg"
+							alt="Card image">
+						<div class="card-body">
+							<p class="card-text">
+								In the heart of every garden, whispers of tranquility unfold as each petal unfurls,
+								telling
+								stories of growth, resilience, and the timeless beauty of the natural world.
+
+							</p>
+							<p>
+								#GardenStories #BlossomingBeauty #ZenRetreat
+							</p>
+						</div>
+						<div class="card-footer text-muted">
+							3 days ago
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- feed posts end -->
+	</header>
+	<main>
+
+	</main>
+	<footer class="bg-primary p-3">
+		<div class="container">
+			<div class=" row">
+				<div class="col text-center">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+						class="bi bi-person-circle" viewBox="0 0 16 16">
+						<path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+						<path fill-rule="evenodd"
+							d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+					</svg>
+				</div>
+				<div class="col text-center">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+						class="bi bi-plus-square" viewBox="0 0 16 16">
+						<path
+							d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+						<path
+							d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+					</svg>
+				</div>
+				<div class="col text-center">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+						class="bi bi-gear" viewBox="0 0 16 16">
+						<path
+							d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0" />
+						<path
+							d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z" />
+					</svg>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	</body>
+
+</html>
