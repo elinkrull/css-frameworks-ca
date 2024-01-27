@@ -5,21 +5,21 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Home Page</title>
 	<link rel="stylesheet" href="./dist/css/index.css">
 	<script defer src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </head>
 
 <body class="bg-primary">
 	<header class="text-center text-info">
-		<h1>Welcome to PlantPals</h1>
+		<h1 class="fw-bold my-5">Welcome to PlantPals</h1>
 	</header>
 	<main>
-		<div class="container borders rounded shadow bg-white">
+		<div class="container borders rounded shadow bg-white col-sm-6 col-md-5 col-lg-4 col-xl-4">
 			<div class="row">
 				<div class="text-center">
-					<h2 class="fw-bol">LOGIN</h2>
-					<p>Don´t have an account? SIGN UP</p>
+					<h2 class="fw-bol mt-5">LOGIN</h2>
+					<p class="mt-5">Don´t have an account? SIGN UP</p>
 				</div>
 				<form>
 					<div class="mb-3">
@@ -32,10 +32,10 @@
 						<input type="text" class="form-control shadow rounded" id="formGroupExampleInput2"
 							placeholder="Password">
 					</div>
+					<!-- Login button with link to profile page -->
 					<div class="text-center">
-						<button type="submit" class="btn btn-primary shadow p-3 mb-5 rounded text-info">
-							Login
-						</button>
+						<a href="profile/index.html"
+							class="btn btn-primary shadow p-3 mb-5 rounded text-info mt-5">Login</a>
 					</div>
 				</form>
 			</div>
