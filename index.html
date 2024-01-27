@@ -6,15 +6,16 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-	<link rel="stylesheet" href="../dist/css/index.css">
+	<link rel="stylesheet" href="./dist/css/index.css">
+	<script defer src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </head>
 
 <body class="bg-primary">
-	<header class="text-center">
-		<h1 class="--bs-blue">Welcome to PlantPals</h1>
+	<header class="text-center text-info">
+		<h1>Welcome to PlantPals</h1>
 	</header>
 	<main>
-		<div class="container borders bg-white">
+		<div class="container borders rounded shadow bg-white">
 			<div class="row">
 				<div class="text-center">
 					<h2 class="fw-bol">LOGIN</h2>
@@ -22,31 +23,18 @@
 				</div>
 				<form>
 					<div class="mb-3">
-						<label for="exampleInputEmail1" class="form-label">Email address</label>
-						<input type="email" class="shadow p-3 mb-5 bg-white rounded form-control"
-							id="exampleInputEmail1" aria-describedby="emailHelp">
-						<div id="emailHelp" class="form-text"></div>
+						<label for="formGroupExampleInput" class="form-label"></label>
+						<input type="text" class="form-control shadow rounded" id="formGroupExampleInput"
+							placeholder="Email adresse">
 					</div>
-
-
-					<div class="row g-3 align-items-center">
-						<div class="col-auto">
-							<label for="inputPassword6" class="col-form-label">Password</label>
-						</div>
-						<div class="col-auto">
-							<input type="password" id="inputPassword6"
-								class="shadow p-3 mb-5 bg-white rounded form-control"
-								aria-describedby="passwordHelpInline">
-						</div>
-						<div class="col-auto">
-							<span id="passwordHelpInline" class="form-text">
-								Must be 8-20 characters long.
-							</span>
-						</div>
+					<div class="mb-3">
+						<label for="formGroupExampleInput2" class="form-label"></label>
+						<input type="text" class="form-control shadow rounded" id="formGroupExampleInput2"
+							placeholder="Password">
 					</div>
 					<div class="text-center">
-						<button type="submit" class="btn btn-primary shadow p-3 mb-5 rounded">
-							<a href="profile/index.html">Login</a>
+						<button type="submit" class="btn btn-primary shadow p-3 mb-5 rounded  text-info">
+							Login
 						</button>
 					</div>
 				</form>
