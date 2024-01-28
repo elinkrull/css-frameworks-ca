@@ -17,9 +17,10 @@
 		<div class="text-center bg-primary p-3 text-info">
 			<h1>PlantPals</h1>
 		</div>
-		<!-- search field -->
-		<nav class="navbar bg-white float-end m-3">
-			<div class="container-fluid">
+		<nav class="navbar bg-light">
+			<div class="container-fluid justify-content-evenly">
+				<a class="navbar-brand" href="../profile/index.html">Profile</a>
+				<a class="navbar-brand">Feed</a>
 				<form class="d-flex" role="search">
 					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
 					<button class="btn btn-outline-primary" type="submit">Search</button>
@@ -56,10 +57,10 @@
 
 		<!-- feed starts -->
 		<div class="container">
-			<h2 m>Feed</h2>
+			<h2>Feed</h2>
 			<div class="row justify-content-end">
-				<div class="mb-3 col-md-3">
-					<select class="form-select" required aria-label="select example">
+				<div class="m-5 col-5 col-md-4">
+					<select class="form-select shadow" required aria-label="select example">
 						<option value="">Sort by</option>
 						<option value="1">Newest Post</option>
 						<option value="2">Oldest post</option>
@@ -67,77 +68,78 @@
 					</select>
 				</div>
 			</div>
+		</div>
 
-			<!-- card 1 -->
-			<div class="row justify-content-center">
-				<div class="card shadow col-lg-3 mx-3 mb-3 d-flex">
-					<div class="flex-fill">
-						<div class="card-body">
-							<h5 class="card-title">plant_vibes</h5>
-						</div>
-						<img src="../images/small_plant.jpg" alt="small growing plant" width="100%">
-						<div class="card-body">
-							<p class="card-text">After five weeks of patient nurturing, the once dormant seed has
-								undergone
-								a
-								remarkable
-								transformation. From a tiny, unassuming kernel, it has sprouted into a vibrant and
-								delicate
-								sapling, reaching towards the sunlight with newfound vitality.</p>
-							<p>
-								@plant_vibes #plants #growing #planting #ecoliving
-							</p>
-						</div>
-						<div class="card-footer text-muted">
-							2 days ago
-						</div>
+		<!-- card 1 -->
+		<div class="row justify-content-center">
+			<div class="card shadow col-10 col-lg-3 mx-3 mb-3 d-flex">
+				<div class="flex-fill">
+					<div class="card-body">
+						<h5 class="card-title">plant_vibes</h5>
 					</div>
-				</div>
-				<!-- card 2 -->
-				<div class="card shadow col-lg-3 mx-3 mb-3 d-flex">
-					<div class="flex-fill">
-						<div class="card-body">
-							<h5 class="card-title">garden_lover</h5>
-						</div>
-						<img src="../images/gardenwork.jpg" alt="woman working with plants in a garden" width="100%">
-						<div class="card-body">
-							<p class="card-text">
-								Gardens are vibrant sanctuaries, where colorful blooms dance in harmony with the gentle
-								rustle
-								of leaves, inviting serenity and connection with nature.
-							</p>
-							<p>
-								#GardenMagic #NatureInBloom #GreenOasis
-							</p>
-						</div>
-						<div class="card-footer text-muted">
-							2 days ago
-						</div>
+					<img src="../images/small_plant.jpg" alt="small growing plant" width="100%">
+					<div class="card-body">
+						<p class="card-text">After five weeks of patient nurturing, the once dormant seed has
+							undergone
+							a
+							remarkable
+							transformation. From a tiny, unassuming kernel, it has sprouted into a vibrant and
+							delicate
+							sapling, reaching towards the sunlight with newfound vitality.</p>
+						<p>
+							@plant_vibes #plants #growing #planting #ecoliving
+						</p>
 					</div>
-				</div>
-				<!-- card 3 -->
-				<div class="card shadow col-lg-3 mx-3 mb-3 d-flex">
-					<div class="flex-fill">
-						<div class="card-body">
-							<h5 class="card-title">green_garden</h5>
-						</div>
-						<img src="../images/garden.jpg" alt="a beautyful garden" width="100%">
-						<div class="card-body">
-							<p class="card-text">
-								In the heart of every garden, whispers of tranquility unfold as each petal unfurls,
-								telling
-								stories of growth, resilience, and the timeless beauty of the natural world.
-							</p>
-							<p>
-								#GardenStories #BlossomingBeauty #ZenRetreat
-							</p>
-						</div>
-						<div class="card-footer text-muted">
-							3 days ago
-						</div>
+					<div class="card-footer text-muted">
+						2 days ago
 					</div>
 				</div>
 			</div>
+			<!-- card 2 -->
+			<div class="card shadow col-10 col-lg-3 mx-3 mb-3 d-flex">
+				<div class="flex-fill">
+					<div class="card-body">
+						<h5 class="card-title">garden_lover</h5>
+					</div>
+					<img src="../images/gardenwork.jpg" alt="woman working with plants in a garden" width="100%">
+					<div class="card-body">
+						<p class="card-text">
+							Gardens are vibrant sanctuaries, where colorful blooms dance in harmony with the gentle
+							rustle
+							of leaves, inviting serenity and connection with nature.
+						</p>
+						<p>
+							#GardenMagic #NatureInBloom #GreenOasis
+						</p>
+					</div>
+					<div class="card-footer text-muted">
+						2 days ago
+					</div>
+				</div>
+			</div>
+			<!-- card 3 -->
+			<div class="card shadow col-10 col-lg-3 mx-3 mb-3 d-flex">
+				<div class="flex-fill">
+					<div class="card-body">
+						<h5 class="card-title">green_garden</h5>
+					</div>
+					<img src="../images/garden.jpg" alt="a beautyful garden" width="100%">
+					<div class="card-body">
+						<p class="card-text">
+							In the heart of every garden, whispers of tranquility unfold as each petal unfurls,
+							telling
+							stories of growth, resilience, and the timeless beauty of the natural world.
+						</p>
+						<p>
+							#GardenStories #BlossomingBeauty #ZenRetreat
+						</p>
+					</div>
+					<div class="card-footer text-muted">
+						3 days ago
+					</div>
+				</div>
+			</div>
+		</div>
 		</div>
 		<!-- feed posts end -->
 	</main>
@@ -145,7 +147,7 @@
 		<div class="container">
 			<div class=" row">
 				<div class="col text-center">
-					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+					<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
 						class="bi bi-person-circle" viewBox="0 0 16 16">
 						<path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
 						<path fill-rule="evenodd"
@@ -153,7 +155,7 @@
 					</svg>
 				</div>
 				<div class="col text-center">
-					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+					<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
 						class="bi bi-plus-square" viewBox="0 0 16 16">
 						<path
 							d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
@@ -162,7 +164,7 @@
 					</svg>
 				</div>
 				<div class="col text-center">
-					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+					<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
 						class="bi bi-gear" viewBox="0 0 16 16">
 						<path
 							d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0" />

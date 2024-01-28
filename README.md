@@ -1,8 +1,6 @@
 
 # PlantPals Social media platform
 
-<img width="934" alt="prinscreen of the design of my project">
-
 The purpose of this project was to create and build a responsive front end for a social media application and with the knowledge of Bootstrap and SASS.
 
 ## Description
