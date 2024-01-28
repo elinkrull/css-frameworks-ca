@@ -22,27 +22,26 @@
 					<h2 class="fw-bol mt-5">LOGIN</h2>
 					<p class="mt-5">Don´t have an account? SIGN UP</p>
 				</div>
-				<form class="needs-validation" novalidate">
+				<!-- login form with valdation start -->
+				<form action="/profile/index.html">
 					<div class="mb-3">
-						<label for="formGroupExampleInput" class="form-label"></label>
+						<label for="email adress" class="form-label"></label>
 						<input type="text" class="form-control shadow rounded" id="email" placeholder="Email" required>
 					</div>
 					<div class="mb-3">
-						<label for="formGroupExampleInput2" class="form-label"></label>
+						<label for="password" class="form-label"></label>
 						<input type="text" class="form-control shadow rounded" id="password" placeholder="Password"
 							minlength="8" required>
 						<div class="invalid-feedback">
 							Password must have a minimum length of 8 characters
 						</div>
 					</div>
-					<!-- Login button with link to profile page -->
 					<div class="text-center">
 						<button class="btn btn-primary shadow p-3 mb-5 rounded text-info mt-5"
 							type="submit">Login</button>
 					</div>
+				</form>
 			</div>
-			</form>
-		</div>
 		</div>
 	</main>
 </body>
