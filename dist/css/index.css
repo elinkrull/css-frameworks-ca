@@ -11855,5 +11855,18 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.watering-woman {
+  height: 500px;
+  width: 1100px;
+  object-fit: cover;
+  position: relative;
+}
+
+.profile-picture {
+  height: 250px;
+  position: absolute;
+  bottom: 90px;
+  left: 190px;
+}
 
 /*# sourceMappingURL=index.css.map */

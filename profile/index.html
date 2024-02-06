@@ -14,33 +14,28 @@
 
 <body class="min-vh-100">
 	<!-- header start -->
-	<header>
-		<a href="../feed/index.html">
-			<div class="text-center bg-primary p-3">
+	<header class="bg-primary">
+		<nav class="navbar navbar-light justify-content-evenly">
+			<div>
 				<h1 class="text-info">PlantPals</h1>
 			</div>
-		</a>
-		<nav class="navbar bg-light">
-			<div class="container-fluid justify-content-evenly">
-				<a class="navbar-brand">Profile</a>
-				<a class="navbar-brand" href="../feed/index.html">Feed</a>
-				<form class="d-flex" role="search">
-					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-					<button class="btn btn-outline-primary" type="submit">Search</button>
-				</form>
-			</div>
+			<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			</form>
+			<p class="text-info">Log out</p>
 		</nav>
 	</header>
 	<!-- header end -->
 	<main>
 		<div class="row justify-content-center overlay-container">
-			<img src="../images/woman-watering.jpg" class="col-12 col-sm-10 col-lg-9"
+			<img src="../images/woman-watering.jpg" class="watering-woman col-12 col-sm-10 col-lg-9"
 				alt="A woman giving water to her plants">
 		</div>
 		<div class="container">
 			<div class="row justify-content-evenly">
-				<div class="col-4 rounded">
-					<img src="../images/profile_picture.jpg" class="col-12 rounded-circle"
+				<div class="col-6 col-md-4 col-xl-3 rounded">
+					<img src="../images/profile_picture.jpg" class="profile-picture rounded-circle"
 						alt="Profile picture of a woman">
 				</div>
 				<div class="col-2 col-md-1 mt-5 text-center">
@@ -53,9 +48,9 @@
 		</div>
 		<!-- profile name and personal info/text -->
 		<div class="container justify-content-center col-11 col-lg-9 my-5">
-			<div class="col-4 col-sm-3 mb-3">
+			<!-- <div class="col-4 col-sm-3 mb-3">
 				<button type="button" class="btn btn-primary text-info">+ FOLLOW</button>
-			</div>
+			</div> -->
 			<h2 class="mb-3">Marie Johansen</h2>
 			<p>🌿 Hello plant entusiasts - I´m Marie</p>
 			<p>
@@ -74,12 +69,12 @@
 			<p> #FernandaTheFiddle
 				#PlantLife #GreenGoddess 🌿📸</p>
 		</div>
-		<div>
+		<!-- <div>
 			<i class="fa-regular fa-square-plus"></i>
 			<p>Add new post</p>
-		</div>
+		</div> -->
 		<h2 class="text-center">Recent posts</h2>
-		<div class="container mb-5">
+		<div class="container">
 			<div class="row justify-content-center my-3">
 				<div class="col-4 col-lg-3">
 					<img class="img-thumbnail" src="../images/green-plants.jpg" alt="green plants">
@@ -117,19 +112,8 @@
 		</div>
 		</div>
 	</main>
-	<footer class="bg-primary p-3">
-		<div class="container">
-			<div class="d-flex justify-content-evenly">
-				<div>
-					<i class="fa-solid fa-house"></i>
-				</div>
-				<div>
-					<i class="fa-regular fa-square-plus"></i>
-				</div>
-			</div>
-		</div>
+	<footer class="bg-primary p-5">
 	</footer>
-
 </body>
 
 </html>
