@@ -27,12 +27,15 @@
 				<form action="/profile/index.html">
 					<div class="mb-3">
 						<label for="email adress" class="form-label"></label>
-						<input type="text" class="form-control shadow rounded" id="email" placeholder="Email">
+						<input type="text" class="form-control shadow rounded" id="email" placeholder="Email" required>
 					</div>
 					<div class="mb-3">
 						<label for="password" class="form-label"></label>
 						<input type="text" class="form-control shadow rounded" id="password" placeholder="Password"
-							minlength="8">
+							minlength="8" required>
+						<div class="invalid-feedback">
+							Password must have a minimum length of 8 characters
+						</div>
 					</div>
 					<div class="text-center">
 						<button class="btn bg-primary shadow rounded my-5" type="submit">Login</button>

@@ -14,45 +14,44 @@
 </head>
 
 <body class="min-vh-100">
-	<header>
-		<div class="text-center bg-primary p-3 text-info">
-			<h1>PlantPals</h1>
-		</div>
-		<nav class="navbar bg-light">
-			<div class="container-fluid justify-content-evenly">
-				<a class="navbar-brand" href="../profile/index.html">Profile</a>
-				<a class="navbar-brand">Feed</a>
-				<form class="d-flex" role="search">
-					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-					<button class="btn btn-outline-primary" type="submit">Search</button>
-				</form>
+	<header class="bg-primary">
+		<nav class="navbar navbar-light justify-content-evenly">
+			<div>
+				<h1 class="text-info">PlantPals</h1>
 			</div>
+			<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			</form>
+			<p class="text-info">Log out</p>
 		</nav>
 	</header>
 	<main>
 		<!-- New post form start-->
 		<div class="container">
-			<h2 class="my-5">For you</h2>
-			<p class="m-0">+ Add new post</p>
-			<form class="was-validated col-md-8 col-lg-4 col-xl-4">
-				<div class="mb-3">
-					<label for="validationTextarea" class="form-label"></label>
-					<textarea class="form-control" id="validationTextarea" placeholder="Required example textarea"
-						required></textarea>
-					<div class="invalid-feedback">
-						Add text
+			<div class="row col-md-8 col-lg-4 col-xl-5">
+				<h2 class="my-5">For you</h2>
+				<p class="m-0">+ Add new post</p>
+				<form class="was-validated">
+					<div class="mb-3">
+						<label for="validationTextarea" class="form-label"></label>
+						<textarea class="form-control" id="validationTextarea" placeholder="Required example textarea"
+							required></textarea>
+						<div class="invalid-feedback">
+							Add text
+						</div>
 					</div>
-				</div>
 
-				<div class="mb-3">
-					<input type="file" class="form-control" aria-label="file example" required>
-					<div class="invalid-feedback">Please select a file</div>
-				</div>
+					<div class="mb-3">
+						<input type="file" class="form-control" aria-label="file example" required>
+						<div class="invalid-feedback">Please select a file</div>
+					</div>
 
-				<div class="mb-3">
-					<button class="btn btn-primary text-info" type="submit" disabled>Post</button>
-				</div>
-			</form>
+					<div class="mb-3">
+						<button class="btn btn-primary text-info" type="submit" disabled>Post</button>
+					</div>
+				</form>
+			</div>
 		</div>
 		<!-- New post form end -->
 		<!-- feed starts -->
