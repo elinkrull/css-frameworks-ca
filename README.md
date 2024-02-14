@@ -13,7 +13,7 @@ Required features
 The following user stories are required for a passing submission:
 
 1. User with @noroff.no or @stud.noroff.no email can register profile
-2. Registered user can login
+2. Registered user can login/authenticate profile
 3. User can view a post content feed
 4. User can filter the post content feed
 5. User can search the post content feed

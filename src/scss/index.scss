@@ -1,13 +1,13 @@
 
 // Configuration
-@import "../../node_modules/bootstrap/scss/functions";
-@import "../../node_modules/bootstrap/scss/variables";
-@import "../../node_modules/bootstrap/scss/variables-dark";
+// @import "../../node_modules/bootstrap/scss/functions";
+// @import "../../node_modules/bootstrap/scss/variables";
+// @import "../../node_modules/bootstrap/scss/variables-dark";
 @import "variables";
-@import "variables-dark";
-@import "../../node_modules/bootstrap/scss/maps";
-@import "../../node_modules/bootstrap/scss/mixins";
-@import "../../node_modules/bootstrap/scss/utilities";
+// @import "variables-dark";
+// @import "../../node_modules/bootstrap/scss/maps";
+// @import "../../node_modules/bootstrap/scss/mixins";
+// @import "../../node_modules/bootstrap/scss/utilities";
 
 
 //bootstrap mainfile
@@ -15,7 +15,6 @@
 
 
 //custom files
-@import "buttons";
 
 .watering-woman {
 	height: 500px;
@@ -29,5 +28,9 @@
 	position: absolute;
 	bottom: 90px;
 	left: 190px;
+}
+
+h1 {
+	color: white;
 }
 
