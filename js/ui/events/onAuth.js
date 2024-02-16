@@ -8,7 +8,10 @@ export async function onAuth(event) {
 	const email = event.target.email.value;
 	const password = event.target.password.value;
 
-	await registerUser(name, email, password);
-	loginUser(email, password);
+	if (location.pathname.includes("/register")) {
+		await registerUser(name, email, password);
+	}
 
+	const login = await loginUser(email, password);
+	console.log(login);
 } 

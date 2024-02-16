@@ -11,13 +11,14 @@ export async function loginUser(email, password) {
 		body: JSON.stringify({ email, password })
 	});
 
-	// console.log(response);
-
 		if (response.ok) {
 			const data = await response.json();
 			const { accessToken, ...profile } = data.data;
 			save("token", accessToken);
 			save("profile", profile);
+
+			 // Redirect to feed.html upon successful login
+			window.location.href = "feed/index.html";
 			return profile;
 		}
 		throw new Error("Could not login");
