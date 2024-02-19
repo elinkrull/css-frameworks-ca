@@ -1,6 +1,7 @@
 import { loginUser } from "../../api/auth/login.js";
 import { registerUser } from "../../api/auth/register.js";
-
+import { getPosts } from "../../api/posts/get.js";
+ 
 //function auth user
 export async function onAuth(event) {
 	event.preventDefault();
@@ -14,4 +15,6 @@ export async function onAuth(event) {
 
 	const login = await loginUser(email, password);
 	console.log(login);
+
+	await getPosts();
 } 

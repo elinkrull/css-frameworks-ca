@@ -1,12 +1,10 @@
 import { save } from "../../storage.js";
 import { API_AUTH, API_BASE, API_LOGIN } from "../constants.js";
+import { authFetch } from "../fetch.js";
 
 // // login user function
 export async function loginUser(email, password) {
-	const response = await fetch(API_BASE + API_AUTH + API_LOGIN, {
-		headers: {
-			"Content-Type": "application/json"
-		},
+	const response = await authFetch(API_BASE + API_AUTH + API_LOGIN, {
 		method: "POST",
 		body: JSON.stringify({ email, password })
 	});
@@ -21,5 +19,6 @@ export async function loginUser(email, password) {
 			window.location.href = "feed/index.html";
 			return profile;
 		}
+		
 		throw new Error("Could not login");
 	}
