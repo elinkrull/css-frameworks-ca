@@ -8,12 +8,12 @@
 	<title>PlantPals | Login</title>
 	<meta name="description" content="This is the homepage for PlantPals where you can sign up or login">
 	<link rel="stylesheet" href="./dist/css/index.css">
-	<script defer src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+	<script type="module" src="index.js"></script>
 	<script src="https://kit.fontawesome.com/727f4fec37.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="bg-primary">
-	<header class="text-center text-info">
+<body class="bg-primary min-vh-100">
+	<header class="text-center">
 		<h1 class="fw-bold my-5">Welcome to PlantPals</h1>
 	</header>
 	<main>
@@ -21,24 +21,24 @@
 			<div class="row">
 				<div class="text-center">
 					<h2 class="fw-bol mt-5">LOGIN</h2>
-					<p class="mt-5">Don´t have an account? SIGN UP</p>
+					<p class="mt-5">Don´t have an account? <a href="register/index.html">SIGN UP</a></p>
 				</div>
 				<!-- login form with valdation start -->
-				<form action="/profile/index.html">
+				<form id="login-from" name="auth">
 					<div class="mb-3">
 						<label for="email adress" class="form-label"></label>
-						<input type="text" class="form-control shadow rounded" id="email" placeholder="Email" required>
+						<input type="email" class="form-control shadow rounded" id="email" placeholder="Email" required>
 					</div>
 					<div class="mb-3">
 						<label for="password" class="form-label"></label>
-						<input type="text" class="form-control shadow rounded" id="password" placeholder="Password"
+						<input type="password" class="form-control shadow rounded" id="password" placeholder="Password"
 							minlength="8" required>
 						<div class="invalid-feedback">
 							Password must have a minimum length of 8 characters
 						</div>
 					</div>
 					<div class="text-center">
-						<button class="btn bg-primary shadow rounded my-5" type="submit">Login</button>
+						<button id="login-btn" class="btn bg-primary shadow rounded my-5" type="submit">Login</button>
 					</div>
 				</form>
 			</div>
