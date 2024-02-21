@@ -15,8 +15,8 @@ export async function loginUser(email, password) {
 			save("token", accessToken);
 			save("profile", profile);
 
-			 // Redirect to feed.html upon successful login
-			window.location.href = "feed/index.html";
+			//  Redirect to profile.html upon successful login
+			window.location.href = "profile/index.html";
 			return profile;
 		}
 		

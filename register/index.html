@@ -22,11 +22,14 @@
 				<form id="registration-form" name="auth">
 					<div class="mb-3">
 						<label for="name" class="form-label"></label>
-						<input type="text" class="form-control shadow rounded" id="name" placeholder="Name" required>
+						<input type="text" class="form-control shadow rounded" id="name" placeholder="Name" required
+							pattern=""
+							title="Name must contain only lower case and upper case letters, numbers and underscore">
 					</div>
 					<div class="mb-3">
 						<label for="email adress" class="form-label"></label>
-						<input type="email" class="form-control shadow rounded" id="email" placeholder="Email" required>
+						<input type="email" class="form-control shadow rounded" id="email" placeholder="Email" required
+							pattern="" title="Only @(stud).norff.no domains are allowd to register">
 					</div>
 					<div class="mb-3">
 						<label for="password" class="form-label"></label>

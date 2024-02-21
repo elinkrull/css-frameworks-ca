@@ -16,8 +16,11 @@ export async function registerUser(name, email, password) {
 	console.log(data);
 
 	if (response.ok) {
-		return data;	
-	}
+		alert("You are now registered")
+		 // Redirect to profile.html upon successful login
+			// window.location.href = "profile/index.html";
+			return profile;
+		}
 	
 	throw new Error("Could not register the account");
 }
