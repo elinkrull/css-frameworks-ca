@@ -1,5 +1,6 @@
 import { loginUser } from "../../api/auth/login.js";
 import { registerUser } from "../../api/auth/register.js";
+import { getPosts } from "../../api/posts/get.js";
  
 //function auth user
 export async function onAuth(event) {
@@ -10,8 +11,11 @@ export async function onAuth(event) {
 
     if (location.pathname.includes("/register")) {
         await registerUser(name, email, password);
-	}
+	} else {
 
 	const login = await loginUser(email, password);
 	console.log(login);
+}
+
+await getPosts();
 }
