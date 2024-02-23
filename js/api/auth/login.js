@@ -16,10 +16,6 @@ export async function loginUser(email, password) {
 			save("profile", profile);
 			return profile;
 		}
-		
-
-			// //  Redirect to profile.html upon successful login
-			// window.location.href = "profile/index.html";
 
 		throw new Error("Could not login");
 	}
