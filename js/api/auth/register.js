@@ -8,8 +8,11 @@ export async function registerUser(name, email, password) {
 			body: JSON.stringify({ name, email, password }),
 	});
 
+	const data = response.json();
+	console.log(data);
+
 	if (response.ok) {
-		return await response.json();
+		return data;
 	}
 
 	throw new Error("Could not register the account");
