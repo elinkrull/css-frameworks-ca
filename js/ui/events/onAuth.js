@@ -17,5 +17,6 @@ export async function onAuth(event) {
 	console.log(login);
 }
 
-await getPosts();
+const posts = await getPosts();
+console.log(posts);
 }
