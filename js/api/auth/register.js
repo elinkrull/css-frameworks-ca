@@ -1,11 +1,9 @@
 import { API_BASE, API_AUTH, API_REGISTER } from "../constants.js";
+import { authFetch } from "../fetch.js";
 
 //register user function
 export async function register(name, email, password) {
-	const response = await fetch(API_BASE + API_AUTH + API_REGISTER, {
-			headers: {
-				"Content-Type": "application/json"
-			},
+	const response = await authFetch(API_BASE + API_AUTH + API_REGISTER, {
 			method: "POST",
 			body: JSON.stringify({ name, email, password }),
 	});
