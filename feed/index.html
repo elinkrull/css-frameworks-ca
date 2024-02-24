@@ -26,137 +26,451 @@
 			<p>Log out</p>
 		</nav>
 	</header>
-	<main>
-		<!-- New post form start-->
-		<div class="container">
-			<div class="row col-md-8 col-lg-4 col-xl-5">
-				<h2 class="my-5">For you</h2>
-				<p class="m-0">+ Add new post</p>
-				<form class="was-validated">
-					<div class="mb-3">
-						<label for="validationTextarea" class="form-label"></label>
-						<textarea class="form-control" id="validationTextarea" placeholder="Required example textarea"
-							required></textarea>
-						<div class="invalid-feedback">
-							Add text
+	<!-- sidebar start -->
+	<div class="container-fluid">
+		<div class="row flex-nowrap">
+			<div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-white">
+				<div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+
+					<ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+						id="menu">
+						<li class="nav-item">
+							<a href="#" class="nav-link align-middle px-0">
+								<i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link align-middle px-0">
+								<i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Search</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link align-middle px-0">
+								<i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Add new post</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link align-middle px-0">
+								<i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Settings</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link align-middle px-0">
+								<i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Notifications</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link align-middle px-0">
+								<i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Profile</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col py-3">
+
+				<!-- sidebar end -->
+				<main>
+					<!-- New post form start-->
+					<div class="container">
+						<div class="row col-md-8 col-lg-4 col-xl-5">
+							<h2 class="my-5">For you</h2>
+							<p class="m-0">+ Add new post</p>
+							<form class="was-validated">
+								<div class="mb-3">
+									<label for="validationTextarea" class="form-label"></label>
+									<textarea class="form-control" id="validationTextarea"
+										placeholder="Required example textarea" required></textarea>
+									<div class="invalid-feedback">
+										Add text
+									</div>
+								</div>
+
+								<div class="mb-3">
+									<input type="file" class="form-control" aria-label="file example" required>
+									<div class="invalid-feedback">Please select a file</div>
+								</div>
+
+								<div class="mb-3">
+									<button class="btn btn-primary" type="submit" disabled>Post</button>
+								</div>
+							</form>
+						</div>
+					</div>
+					<!-- New post form end -->
+					<!-- feed starts -->
+					<div class="container">
+						<h2 class="mt-5">Feed</h2>
+						<div class="row justify-content-end">
+							<div class="m-5 col-5 col-md-4">
+								<select class="form-select shadow" required aria-label="select example">
+									<option value="">Sort by</option>
+									<option value="1">Newest Post</option>
+									<option value="2">Oldest post</option>
+									<option value="3">Most likes</option>
+								</select>
+							</div>
 						</div>
 					</div>
 
-					<div class="mb-3">
-						<input type="file" class="form-control" aria-label="file example" required>
-						<div class="invalid-feedback">Please select a file</div>
+					<!-- card 1 -->
+					<div id="feed" class="row justify-content-center">
+						<div class="card shadow col-10 col-lg-3 mx-3 mb-3 d-flex">
+							<div class="flex-fill">
+								<div class="card-body">
+									<h5 class="card-title">plant_vibes</h5>
+								</div>
+								<div class="card-footer text-muted">
+									2 days ago
+								</div>
+								<img src="../images/small_plant.jpg" alt="small growing plant" width="100%">
+								<div class="card-body">
+									<p class="card-text">After five weeks of patient nurturing, the once dormant seed
+										has
+										undergone
+										a
+										remarkable
+										transformation. From a tiny, unassuming kernel, it has sprouted into a vibrant
+										and
+										delicate
+										sapling, reaching towards the sunlight with newfound vitality.</p>
+									<p>
+										@plant_vibes #plants #growing #planting #ecoliving
+									</p>
+								</div>
+							</div>
+							<div class="row">
+								<p>Like</p>
+								<p>Comment</p>
+								<p>Share</p>
+							</div>
+						</div>
+						<!-- card 2 -->
+						<div class="card shadow col-10 col-lg-3 mx-3 mb-3 d-flex">
+							<div class="flex-fill">
+								<div class="card-body">
+									<h5 class="card-title">garden_lover</h5>
+								</div>
+								<div class="card-footer text-muted">
+									2 days ago
+								</div>
+								<img src="../images/gardenwork.jpg" alt="woman working with plants in a garden"
+									width="100%">
+								<div class="card-body">
+									<p class="card-text">
+										Gardens are vibrant sanctuaries, where colorful blooms dance in harmony with the
+										gentle
+										rustle
+										of leaves, inviting serenity and connection with nature.
+									</p>
+									<p>
+										#GardenMagic #NatureInBloom #GreenOasis
+									</p>
+								</div>
+								<div class="card-body row">
+									<p>Like</p>
+									<p>Comment</p>
+									<p>Share</p>
+								</div>
+							</div>
+						</div>
+						<!-- card 2 -->
+						<div class="card shadow col-10 col-lg-3 mx-3 mb-3 d-flex">
+							<div class="flex-fill">
+								<div class="card-body">
+									<h5 class="card-title">garden_lover</h5>
+								</div>
+								<div class="card-footer text-muted">
+									2 days ago
+								</div>
+								<img src="../images/gardenwork.jpg" alt="woman working with plants in a garden"
+									width="100%">
+								<div class="card-body">
+									<p class="card-text">
+										Gardens are vibrant sanctuaries, where colorful blooms dance in harmony with the
+										gentle
+										rustle
+										of leaves, inviting serenity and connection with nature.
+									</p>
+									<p>
+										#GardenMagic #NatureInBloom #GreenOasis
+									</p>
+								</div>
+								<div class="card-body row">
+									<p>Like</p>
+									<p>Comment</p>
+									<p>Share</p>
+								</div>
+							</div>
+						</div>
+						<!-- card 2 -->
+						<div class="card shadow col-10 col-lg-3 mx-3 mb-3 d-flex">
+							<div class="flex-fill">
+								<div class="card-body">
+									<h5 class="card-title">garden_lover</h5>
+								</div>
+								<div class="card-footer text-muted">
+									2 days ago
+								</div>
+								<img src="../images/gardenwork.jpg" alt="woman working with plants in a garden"
+									width="100%">
+								<div class="card-body">
+									<p class="card-text">
+										Gardens are vibrant sanctuaries, where colorful blooms dance in harmony with the
+										gentle
+										rustle
+										of leaves, inviting serenity and connection with nature.
+									</p>
+									<p>
+										#GardenMagic #NatureInBloom #GreenOasis
+									</p>
+								</div>
+								<div class="card-body row">
+									<p>Like</p>
+									<p>Comment</p>
+									<p>Share</p>
+								</div>
+							</div>
+						</div>
+						<!-- card 3 -->
+						<div class="card shadow col-10 col-lg-3 mx-3 mb-3 d-flex">
+							<div class="flex-fill">
+								<div class="card-body">
+									<h5 class="card-title">garden_lover</h5>
+								</div>
+								<div class="card-footer text-muted">
+									2 days ago
+								</div>
+								<img src="../images/gardenwork.jpg" alt="woman working with plants in a garden"
+									width="100%">
+								<div class="card-body">
+									<p class="card-text">
+										Gardens are vibrant sanctuaries, where colorful blooms dance in harmony with the
+										gentle
+										rustle
+										of leaves, inviting serenity and connection with nature.
+									</p>
+									<p>
+										#GardenMagic #NatureInBloom #GreenOasis
+									</p>
+								</div>
+								<div class="card-body row">
+									<p>Like</p>
+									<p>Comment</p>
+									<p>Share</p>
+								</div>
+							</div>
+						</div>
+						<!-- card 4 -->
+						<div class="card shadow col-10 col-lg-3 mx-3 mb-3 d-flex">
+							<div class="flex-fill">
+								<div class="card-body">
+									<h5 class="card-title">garden_lover</h5>
+								</div>
+								<div class="card-footer text-muted">
+									2 days ago
+								</div>
+								<img src="../images/gardenwork.jpg" alt="woman working with plants in a garden"
+									width="100%">
+								<div class="card-body">
+									<p class="card-text">
+										Gardens are vibrant sanctuaries, where colorful blooms dance in harmony with the
+										gentle
+										rustle
+										of leaves, inviting serenity and connection with nature.
+									</p>
+									<p>
+										#GardenMagic #NatureInBloom #GreenOasis
+									</p>
+								</div>
+								<div class="card-body row">
+									<p>Like</p>
+									<p>Comment</p>
+									<p>Share</p>
+								</div>
+							</div>
+						</div>
+						<!-- card 5 -->
+						<div class="card shadow col-10 col-lg-3 mx-3 mb-3 d-flex">
+							<div class="flex-fill">
+								<div class="card-body">
+									<h5 class="card-title">garden_lover</h5>
+								</div>
+								<div class="card-footer text-muted">
+									2 days ago
+								</div>
+								<img src="../images/gardenwork.jpg" alt="woman working with plants in a garden"
+									width="100%">
+								<div class="card-body">
+									<p class="card-text">
+										Gardens are vibrant sanctuaries, where colorful blooms dance in harmony with the
+										gentle
+										rustle
+										of leaves, inviting serenity and connection with nature.
+									</p>
+									<p>
+										#GardenMagic #NatureInBloom #GreenOasis
+									</p>
+								</div>
+								<div class="card-body row">
+									<p>Like</p>
+									<p>Comment</p>
+									<p>Share</p>
+								</div>
+							</div>
+						</div>
+						<!-- card 6 -->
+						<div class="card shadow col-10 col-lg-3 mx-3 mb-3 d-flex">
+							<div class="flex-fill">
+								<div class="card-body">
+									<h5 class="card-title">garden_lover</h5>
+								</div>
+								<div class="card-footer text-muted">
+									2 days ago
+								</div>
+								<img src="../images/gardenwork.jpg" alt="woman working with plants in a garden"
+									width="100%">
+								<div class="card-body">
+									<p class="card-text">
+										Gardens are vibrant sanctuaries, where colorful blooms dance in harmony with the
+										gentle
+										rustle
+										of leaves, inviting serenity and connection with nature.
+									</p>
+									<p>
+										#GardenMagic #NatureInBloom #GreenOasis
+									</p>
+								</div>
+								<div class="card-body row">
+									<p>Like</p>
+									<p>Comment</p>
+									<p>Share</p>
+								</div>
+							</div>
+						</div>
+						<!-- card 7 -->
+						<div class="card shadow col-10 col-lg-3 mx-3 mb-3 d-flex">
+							<div class="flex-fill">
+								<div class="card-body">
+									<h5 class="card-title">garden_lover</h5>
+								</div>
+								<div class="card-footer text-muted">
+									2 days ago
+								</div>
+								<img src="../images/gardenwork.jpg" alt="woman working with plants in a garden"
+									width="100%">
+								<div class="card-body">
+									<p class="card-text">
+										Gardens are vibrant sanctuaries, where colorful blooms dance in harmony with the
+										gentle
+										rustle
+										of leaves, inviting serenity and connection with nature.
+									</p>
+									<p>
+										#GardenMagic #NatureInBloom #GreenOasis
+									</p>
+								</div>
+								<div class="card-body row">
+									<p>Like</p>
+									<p>Comment</p>
+									<p>Share</p>
+								</div>
+							</div>
+						</div>
+						<!-- card 8 -->
+						<div class="card shadow col-10 col-lg-3 mx-3 mb-3 d-flex">
+							<div class="flex-fill">
+								<div class="card-body">
+									<h5 class="card-title">garden_lover</h5>
+								</div>
+								<div class="card-footer text-muted">
+									2 days ago
+								</div>
+								<img src="../images/gardenwork.jpg" alt="woman working with plants in a garden"
+									width="100%">
+								<div class="card-body">
+									<p class="card-text">
+										Gardens are vibrant sanctuaries, where colorful blooms dance in harmony with the
+										gentle
+										rustle
+										of leaves, inviting serenity and connection with nature.
+									</p>
+									<p>
+										#GardenMagic #NatureInBloom #GreenOasis
+									</p>
+								</div>
+								<div class="card-body row">
+									<p>Like</p>
+									<p>Comment</p>
+									<p>Share</p>
+								</div>
+							</div>
+						</div>
+						<!-- card 9 -->
+						<div class="card shadow col-10 col-lg-3 mx-3 mb-3 d-flex">
+							<div class="flex-fill">
+								<div class="card-body">
+									<h5 class="card-title">garden_lover</h5>
+								</div>
+								<div class="card-footer text-muted">
+									2 days ago
+								</div>
+								<img src="../images/gardenwork.jpg" alt="woman working with plants in a garden"
+									width="100%">
+								<div class="card-body">
+									<p class="card-text">
+										Gardens are vibrant sanctuaries, where colorful blooms dance in harmony with the
+										gentle
+										rustle
+										of leaves, inviting serenity and connection with nature.
+									</p>
+									<p>
+										#GardenMagic #NatureInBloom #GreenOasis
+									</p>
+								</div>
+								<div class="card-body row">
+									<p>Like</p>
+									<p>Comment</p>
+									<p>Share</p>
+								</div>
+							</div>
+						</div>
+						<!-- card 10  -->
+						<div class="card shadow col-10 col-lg-3 mx-3 mb-3 d-flex">
+							<div class="flex-fill">
+								<div class="card-body">
+									<h5 class="card-title">green_garden</h5>
+								</div>
+								<div class="card-footer text-muted">
+									3 days ago
+								</div>
+								<img src="../images/garden.jpg" alt="a beautyful garden" width="100%">
+								<div class="card-body">
+									<p class="card-text">
+										In the heart of every garden, whispers of tranquility unfold as each petal
+										unfurls,
+										telling
+										stories of growth, resilience, and the timeless beauty of the natural world.
+									</p>
+									<p>
+										#GardenStories #BlossomingBeauty #ZenRetreat
+									</p>
+								</div>
+								<div>
+									<p>Like</p>
+									<p>Comment</p>
+									<p>Share</p>
+								</div>
+							</div>
+						</div>
 					</div>
+			</div>
+			<!-- feed posts end -->
+			</main>
 
-					<div class="mb-3">
-						<button class="btn btn-primary" type="submit" disabled>Post</button>
-					</div>
-				</form>
-			</div>
 		</div>
-		<!-- New post form end -->
-		<!-- feed starts -->
-		<div class="container">
-			<h2 class="mt-5">Feed</h2>
-			<div class="row justify-content-end">
-				<div class="m-5 col-5 col-md-4">
-					<select class="form-select shadow" required aria-label="select example">
-						<option value="">Sort by</option>
-						<option value="1">Newest Post</option>
-						<option value="2">Oldest post</option>
-						<option value="3">Most likes</option>
-					</select>
-				</div>
-			</div>
-		</div>
-
-		<!-- card 1 -->
-		<div class="row justify-content-center">
-			<div class="card shadow col-10 col-lg-3 mx-3 mb-3 d-flex">
-				<div class="flex-fill">
-					<div class="card-body">
-						<h5 class="card-title">plant_vibes</h5>
-					</div>
-					<div class="card-footer text-muted">
-						2 days ago
-					</div>
-					<img src="../images/small_plant.jpg" alt="small growing plant" width="100%">
-					<div class="card-body">
-						<p class="card-text">After five weeks of patient nurturing, the once dormant seed has
-							undergone
-							a
-							remarkable
-							transformation. From a tiny, unassuming kernel, it has sprouted into a vibrant and
-							delicate
-							sapling, reaching towards the sunlight with newfound vitality.</p>
-						<p>
-							@plant_vibes #plants #growing #planting #ecoliving
-						</p>
-					</div>
-				</div>
-				<div class="row">
-					<p>Like</p>
-					<p>Comment</p>
-					<p>Share</p>
-				</div>
-			</div>
-			<!-- card 2 -->
-			<div class="card shadow col-10 col-lg-3 mx-3 mb-3 d-flex">
-				<div class="flex-fill">
-					<div class="card-body">
-						<h5 class="card-title">garden_lover</h5>
-					</div>
-					<div class="card-footer text-muted">
-						2 days ago
-					</div>
-					<img src="../images/gardenwork.jpg" alt="woman working with plants in a garden" width="100%">
-					<div class="card-body">
-						<p class="card-text">
-							Gardens are vibrant sanctuaries, where colorful blooms dance in harmony with the gentle
-							rustle
-							of leaves, inviting serenity and connection with nature.
-						</p>
-						<p>
-							#GardenMagic #NatureInBloom #GreenOasis
-						</p>
-					</div>
-					<div class="card-body row">
-						<p>Like</p>
-						<p>Comment</p>
-						<p>Share</p>
-					</div>
-				</div>
-			</div>
-			<!-- card 3 -->
-			<div class="card shadow col-10 col-lg-3 mx-3 mb-3 d-flex">
-				<div class="flex-fill">
-					<div class="card-body">
-						<h5 class="card-title">green_garden</h5>
-					</div>
-					<div class="card-footer text-muted">
-						3 days ago
-					</div>
-					<img src="../images/garden.jpg" alt="a beautyful garden" width="100%">
-					<div class="card-body">
-						<p class="card-text">
-							In the heart of every garden, whispers of tranquility unfold as each petal unfurls,
-							telling
-							stories of growth, resilience, and the timeless beauty of the natural world.
-						</p>
-						<p>
-							#GardenStories #BlossomingBeauty #ZenRetreat
-						</p>
-					</div>
-					<div>
-						<p>Like</p>
-						<p>Comment</p>
-						<p>Share</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		</div>
-		<!-- feed posts end -->
-	</main>
+	</div>
+	</div>
 	<footer class="bg-primary p-5">
 
 	</footer>
