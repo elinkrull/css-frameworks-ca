@@ -5,12 +5,11 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>PlantPals | Login</title>
-	<meta name="description" content="This is the homepage for PlantPals where you can sign up or login">
-	<link rel="stylesheet" href="./dist/css/index.css">
-	<script type="module" src="index.js"></script>
+	<title>PlantPals | Sign up</title>
+	<meta name="description" content="This is the page where you can register and sign up for an account">
+	<link rel="stylesheet" href="../dist/css/index.css">
+	<script type="module" src="../index.js"></script>
 	<script src="https://kit.fontawesome.com/727f4fec37.js" crossorigin="anonymous"></script>
-</head>
 
 <body class="bg-primary min-vh-100">
 	<header class="text-center">
@@ -19,12 +18,12 @@
 	<main>
 		<div class="container borders rounded shadow bg-white col-9 col-sm-6 col-md-5 col-xl-4">
 			<div class="row">
-				<div class="text-center">
-					<h2 class="fw-bol mt-5">LOGIN</h2>
-					<p class="mt-5">Don´t have an account? <a href="register/index.html">SIGN UP</a></p>
-				</div>
-				<!-- login form with validation start -->
-				<form id="login-from" name="auth">
+				<h2 class="fw-bol mt-5 text-center">Register</h2>
+				<form id="registration-form" name="auth">
+					<div class="mb-3">
+						<label for="name" class="form-label"></label>
+						<input type="text" class="form-control shadow rounded" id="name" placeholder="Name" required>
+					</div>
 					<div class="mb-3">
 						<label for="email" class="form-label"></label>
 						<input type="email" class="form-control shadow rounded" id="email" placeholder="Email" required>
@@ -38,12 +37,22 @@
 						</div>
 					</div>
 					<div class="text-center">
-						<button id="login-btn" class="btn bg-primary shadow rounded my-5" type="submit">Login</button>
+						<button id="register-btn" class="btn bg-primary shadow rounded my-5"
+							type="submit">Register</button>
 					</div>
 				</form>
+				<p class="text-center">By registering you agree to our terms and conditions. Find out how we collect,
+					use and share your
+					data in our
+					Privacy Policy and how we use cookies and similar technologies in our Cookie Policy.</p>
+				<p class="text-center">Do you allready have an account? <a href="../index.html">Sign in</a></p>
 			</div>
 		</div>
 	</main>
+	<footer>
+
+	</footer>
+
 </body>
 
 </html>
