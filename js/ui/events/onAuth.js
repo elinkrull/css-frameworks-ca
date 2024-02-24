@@ -1,5 +1,6 @@
 import { login } from "../../api/auth/login.js";
 import { register } from "../../api/auth/register.js";
+import { getPosts } from "../../api/posts/get.js";
 
 export async function onAuth(event) {
 	event.preventDefault();
