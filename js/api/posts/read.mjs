@@ -8,4 +8,13 @@ export async function getPosts() {
 }
 
 
-export async function getPost(id) {}
+export async function getPost(id) {
+	//add error handling
+	// const response = await authFetch`${API_BASE}${API_POSTS}/${id}`;
+	// return await response.json();
+	const getPostURL = `${API_BASE}${API_POSTS}/${id}`;
+
+	const response = await authFetch(getPostURL)
+
+	return await response.json();
+}

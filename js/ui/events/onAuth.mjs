@@ -1,9 +1,7 @@
 import { login } from "../../api/auth/login.mjs";
 import { register } from "../../api/auth/register.mjs";
-import { getPosts } from "../../api/posts/read.mjs";
-import { updatePost } from "../../api/posts/update.mjs";
-import { removePost } from "../../api/posts/delete.mjs";
-import { createPost } from "../../api/posts/create.mjs";
+
+// import * as posts from "../../api/posts/index.mjs";
 
 export async function onAuth(event) {
 	event.preventDefault();
@@ -16,21 +14,34 @@ export async function onAuth(event) {
 	}
 	// registerUser(name, email, password);
 	login(email, password);
-
-	const posts = await getPosts();
-	console.log(posts);
 }
 
-createPost({
-	title: "This is a test",
-	body: "this is a body test"
-});
+
+// const posts = await getPosts();
+// console.log(posts);
+
+// posts.getPost(556).then(console.log)
+
+// createPost({
+// 	title: "This is a test",
+// 	body: "this is a body test"
+// });
 
 
-updatePost({
-	id: 572,
-	title: "This is a test update",
-	body: "this is a body test update"
-});
+// updatePost({
+// 	id: 572,
+// 	title: "This is a test update",
+// 	body: "this is a body test update"
+// });
 
-removePost(572)
+// removePost(572)
+
+// ----------
+
+// post.createPost();
+// post.updatePost();
+// post.removePost();
+// post.getPost();
+// posts.getPosts();
+
+// ---------
