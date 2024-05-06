@@ -5,15 +5,13 @@ import * as post from "./api/posts/index.mjs"
 homePage()
 
 
-
 post.getPosts().then(console.log)
 
-
-post.renderPost()
+post.renderPosts()
 
 // post.removePost(869).then(console.log)
 
 post.getPost(839).then(console.log)
 
-// post.displayPosts().then(console.log)
 
+// post.createPost(postData).then(console.log)

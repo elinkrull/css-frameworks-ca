@@ -3,7 +3,6 @@ import { authFetch } from "../authfetch.mjs";
 
 
 
-
 //get posts as an object
 export async function getPosts() {
 	const updatePostUrl = `${API_BASE}${API_POSTS}`;
@@ -11,7 +10,7 @@ export async function getPosts() {
 	return await response.json();
 }
 
-//Christopher Tønnesland
+
 // get posts as an array
 async function getPostData() {
 	const posts = await getPosts();
@@ -21,20 +20,21 @@ async function getPostData() {
 getPostData();
 
 
-
-export async function renderPost() {
+//Christopher Tønnesland hjelp med deler av koden
+export async function renderPosts() {
 	const posts = await getPosts();
 	const data = posts.data;
    
-	const feedContainer = document.getElementById("feed");
+	const feedContainer = document.querySelector("#feed");
    
+	//for vært object i arrayet skal det hete fra nå el
 	const postItem = data.map((el) => {
 	 const title = el.title;
-	 return `<div class="card shadow col-10 col-lg-3 mx-3 mb-3 d-flex">
-	 <div class="flex-fill">
-		 <div class="card-body">
+	 const body = el.body;
+	 return `<div class="card shadow mt-5 col-10 col-lg-15 mx-3 mb-3 d-flex">
+	 <div class="card-body flex-fill">
 			 <h5>${title}</h5>
-		 </div>
+			 <p>${body}</p>
 	 </div>
    </div>`;
 	});
@@ -42,10 +42,7 @@ export async function renderPost() {
 	feedContainer.innerHTML = postItem;
    };
    
-   renderPost();
    //Christopher Tønnesland slutt
-
-
 
    
 //get a single posts by ID
