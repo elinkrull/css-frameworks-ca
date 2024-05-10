@@ -20,11 +20,6 @@
 			<div>
 				<h1>PlantPals</h1>
 			</div>
-			<form class="form-inline my-2 my-lg-0">
-				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-			</form>
-			<p>Log out</p>
 		</nav>
 	</header>
 	<!-- sidebar start -->
@@ -37,23 +32,13 @@
 						id="menu">
 						<li class="nav-item">
 							<a href="../profile/index.html" class="nav-link align-middle px-0">
-								<i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Profile</span>
+								<i class="fs-4 bi-house"></i> <span class="ms-2 d-none d-sm-inline fs-4">Profile</span>
 							</a>
 						</li>
 
 						<li class="nav-item">
-							<a href="../posts/index.html" class="nav-link align-middle px-0">
-								<i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Add new post</span>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="#" class="nav-link align-middle px-0">
-								<i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Settings</span>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="#" class="nav-link align-middle px-0">
-								<i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Notifications</span>
+							<a href="../index.html" class="nav-link align-middle px-0">
+								<i class="fs-4 bi-house"></i> <span class="ms-2 d-none d-sm-inline fs-4">Log out</span>
 							</a>
 						</li>
 					</ul>
@@ -88,10 +73,19 @@
 									</div> -->
 								</div>
 
-								<div class="mb-3">
+								<!-- <div class="mb-3">
 									<input type="file" name="post-image" id="post-image" class="form-control"
 										aria-label="post-image">
 									<div class="invalid-feedback">Please select a file</div>
+								</div> -->
+
+								<div class="mb-3">
+									<label for="post-image" class="form-label"></label>
+									<input type="url" name="post-image" id="post-image" class="form-control pb-5"
+										placeholder="Add image/url">
+									<!-- <div class="invalid-feedback">
+										You must write something here
+									</div> -->
 								</div>
 
 								<div class="mb-3">
@@ -107,12 +101,21 @@
 						<h3 class="mt-5">Feed</h3>
 						<div class="col-10 col-lg-15 mb-3">
 							<div class="mt-5 col-5 col-md-4">
-								<select class="form-select shadow" required aria-label="select example">
-									<option value="1">Newest Post</option>
-									<option value="2">Oldest post</option>
-									<option value="3">Most likes</option>
-								</select>
+								<!-- filter section start-->
+								<div class="mb-3">
+									<button class="btn btn-primary" type="submit">Display only posts with image</button>
+								</div>
+								<div class="mb-3">
+									<button class="btn btn-primary" type="submit">Display only posts with
+										comments</button>
+								</div>
+								<!-- filter section end-->
 							</div>
+							<form class="my-2 my-lg-0">
+								<input class="form-control mr-sm-2 mb-3 mt-5" type="search" placeholder="Search"
+									aria-label="Search">
+								<button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+							</form>
 						</div>
 					</div>
 					<!-- sorting post section end-->

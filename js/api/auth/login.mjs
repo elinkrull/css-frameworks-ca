@@ -15,7 +15,7 @@ export async function login(email, password) {
 			const { accessToken, ...profile } = (await response.json()).data;
 			save("token", accessToken);
 			save("profile", profile);
-			window.location.href ="./posts"
+			window.location.href ="posts/index.html"
 			return profile;
 		}
 		throw new Error("Could not login");
