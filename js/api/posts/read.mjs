@@ -1,8 +1,6 @@
 import { API_BASE, API_POSTS } from "../constants.mjs";
 import { authFetch } from "../authfetch.mjs";
 
-
-
 //get posts as an object
 export async function getPosts() {
 	const getPostsUrl = `${API_BASE}${API_POSTS}`;
@@ -20,14 +18,12 @@ async function getPostData() {
 getPostData();
 
 
-//Christopher Tønnesland hjelp med deler av koden
-export async function renderPosts() {
+export async function displayPosts() {
 	const posts = await getPosts();
 	const data = posts.data;
    
-	const feedContainer = document.querySelector("#feed");
+	const feedContainer = document.querySelector("#display-posts-container");
    
-	//for vært object i arrayet skal det hete fra nå el
 	const postItem = data.map((el) => {
 	 const title = el.title;
 	 const body = el.body;
@@ -52,8 +48,6 @@ export async function renderPosts() {
    
 	feedContainer.innerHTML = postItemsHTML;
    };
-   
-   //Christopher Tønnesland slutt
 
    
 //get a single posts by ID
