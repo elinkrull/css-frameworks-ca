@@ -14,7 +14,7 @@ async function getPostData() {
 	console.log(posts.data);
 };
 
-getPostData();
+// getPostData();
 
 
 export async function displayPosts() {
@@ -44,23 +44,29 @@ export async function displayPosts() {
 
    //Function to display a single blog post by its id
 export async function displaySinglePost(id) {
+	console.log(id)
     try {
 
 		//convert ID from a string to a number
-		id = parseInt(id);
+		// id = parseInt(id);
 
 		//fetch the post from the API
         const singlePost = await getPost(id);
-        const title = singlePost.title;
-        const body = singlePost.body;
-
+        const title = singlePost.data.title;
+        const body = singlePost.data.body ? singlePost.data.body : "No description added";
+		const media = singlePost.data.media?.url ? singlePost.data.media.url : "https://images.unsplash.com/photo-1558293842-c0fd3db86157?q=80&w=2929&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"; 
+		
+console.log(media)
 		//display the post on the page
 		const singlePostContainer = document.querySelector("#single-post-container");
+	
         const postHTML = `
             <div class="card shadow mt-5 mx-3 mb-3">
                 <div class="card-body">
                     <h2>${title}</h2>
                     <p>${body}</p>
+					<img src=${media} />
+					<a href="/editPost/?id=${id}">Edit</a>
                 </div>
             </div>`;
 

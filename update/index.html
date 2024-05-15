@@ -56,9 +56,46 @@
 				<!-- sidebar end -->
 				<main>
 
-					<div id="single-post-container">
+					<!-- Edit post-->
+					<div class="container">
+						<div class="row col-md-8 col-lg-4 col-xl-5">
+							<h3 class="my-5"> Edit post</h3>
+							<form id="postForm" class="was-validated">
 
+								<div class="mb-3">
+									<label for="post-title" class="form-label"></label>
+									<input type="text" name="post-title" id="post-title" class="form-control"
+										placeholder="Add title" required>
+									<!-- <div class="invalid-feedback">
+									You must add a title
+								</div> -->
+								</div>
+
+								<div class="mb-3">
+									<label for="post-body" class="form-label"></label>
+									<input type="text" name="post-body" id="post-body" class="form-control pb-5"
+										placeholder="Add text" required>
+									<!-- <div class="invalid-feedback">
+									You must write something here
+								</div> -->
+								</div>
+
+								<!-- <div class="mb-3">
+								<label for="post-image" class="form-label"></label>
+								<input type="url" name="post-image" id="post-image" class="form-control pb-5"
+									placeholder="Add image/url">
+								<!-- <div class="invalid-feedback">
+									You must write something here
+								</div> -->
+								<!-- </div> -->
+
+								<div class="mb-3">
+									<button class="btn btn-primary" type="submit">Save</button>
+								</div>
+							</form>
+						</div>
 					</div>
+					<!-- create new post end -->
 
 				</main>
 
