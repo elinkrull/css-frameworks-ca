@@ -20,27 +20,28 @@ export async function updatePost(postData) {
 
 export function updatePostListener() {
 	document.addEventListener("DOMContentLoaded", () => {
-		const postForm = document.getElementById("postForm");
+		const postForm = document.getElementById("updateForm");
+
 	
 		postForm.addEventListener("submit", async (event) => {
 			event.preventDefault();
 	
 			const formData = new FormData(postForm);
 			const postData = {
-				title: formData.get("post-title"),
-				body: formData.get("post-body"),
+				title: formData.get("update-title"),
+				body: formData.get("update-body"),
 				// image: formData.get("post-image"),
 				// Add more properties as needed
 			};
 	
 			try {
-				await createPost(postData);
+				await updatePost(postData);
 				// Optionally, display a success message or redirect to another page
-				console.log("Post created successfully!");
+				console.log("Post updated successfully!");
 				// Reset the form
 				postForm.reset();
 			} catch (error) {
-				console.error("Error creating post:", error);
+				console.error("Error updating post:", error);
 				// Optionally, display an error message to the user
 			}
 		});

@@ -5,11 +5,10 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>PlantPals | Feed Page</title>
-	<meta name="description"
-		content="Here you can see the posts that other peolpe you follow have postet in PlantPals, and you can also write a new post to your own profile">
+	<title>PlantPals | Update Post Page</title>
+	<meta name="description" content="Here you can see edit the blogpost you have written">
 	<link rel="stylesheet" href="../dist/css/index.css">
-	<script defer type="module" src="../js/routes/singlepost.mjs"></script>
+	<script defer type="module" src="../js/routes/updatepost.mjs"></script>
 	<!-- <script defer src="node_modules/bootstrap/dist/js/bootstrap.js"></script> -->
 	<script src="https://kit.fontawesome.com/727f4fec37.js" crossorigin="anonymous"></script>
 </head>
@@ -60,11 +59,11 @@
 					<div class="container">
 						<div class="row col-md-8 col-lg-4 col-xl-5">
 							<h3 class="my-5"> Edit post</h3>
-							<form id="postForm" class="was-validated">
+							<form id="updateForm" class="was-validated">
 
 								<div class="mb-3">
 									<label for="post-title" class="form-label"></label>
-									<input type="text" name="post-title" id="post-title" class="form-control"
+									<input type="text" name="update-title" id="update-title" class="form-control"
 										placeholder="Add title" required>
 									<!-- <div class="invalid-feedback">
 									You must add a title
@@ -73,7 +72,7 @@
 
 								<div class="mb-3">
 									<label for="post-body" class="form-label"></label>
-									<input type="text" name="post-body" id="post-body" class="form-control pb-5"
+									<input type="text" name="update-body" id="update-body" class="form-control pb-5"
 										placeholder="Add text" required>
 									<!-- <div class="invalid-feedback">
 									You must write something here
