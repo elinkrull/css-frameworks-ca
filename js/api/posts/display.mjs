@@ -32,7 +32,6 @@ export async function displayPosts() {
 	 <div class="card-body flex-fill">
 			 <a href="/post/index.html?id=${id}">${title}</a>
 			 <p>${body}</p>
-			 <p>${id}</p>
 	 </div>
    </div>`;
 	});
@@ -70,7 +69,6 @@ export async function displaySinglePost(id) {
         console.error("Error fetching post:", error);
     }
 }
-
 
 
    //JSDocs
