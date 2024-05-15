@@ -9,7 +9,7 @@
 	<meta name="description"
 		content="Here you can see the posts that other peolpe you follow have postet in PlantPals, and you can also write a new post to your own profile">
 	<link rel="stylesheet" href="../dist/css/index.css">
-	<script defer type="module" src="../js/index.mjs"></script>
+	<script defer type="module" src="../js/postindex.mjs"></script>
 	<!-- <script defer src="node_modules/bootstrap/dist/js/bootstrap.js"></script> -->
 	<script src="https://kit.fontawesome.com/727f4fec37.js" crossorigin="anonymous"></script>
 </head>
@@ -74,19 +74,13 @@
 								</div>
 
 								<!-- <div class="mb-3">
-									<input type="file" name="post-image" id="post-image" class="form-control"
-										aria-label="post-image">
-									<div class="invalid-feedback">Please select a file</div>
-								</div> -->
-
-								<div class="mb-3">
 									<label for="post-image" class="form-label"></label>
 									<input type="url" name="post-image" id="post-image" class="form-control pb-5"
 										placeholder="Add image/url">
 									<!-- <div class="invalid-feedback">
 										You must write something here
 									</div> -->
-								</div>
+								<!-- </div> -->
 
 								<div class="mb-3">
 									<button class="btn btn-primary" type="submit">Post</button>
@@ -121,7 +115,7 @@
 					<!-- sorting post section end-->
 
 					<!-- feed with all posts starts -->
-					<div id="feed">
+					<div id="display-posts-container">
 
 					</div>
 					<!-- feed with all posts end -->
