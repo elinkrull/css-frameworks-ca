@@ -3,15 +3,12 @@ import { API_BASE, API_POSTS } from "../constants.mjs";
 
 const method = "delete";
 
-export async function removePost(id) {
-	const removePostURL = `${API_BASE}${API_POSTS}/${id}`;
+export async function deletePost(id) {
+	const deletePostURL = `${API_BASE}${API_POSTS}/${id}`;
 
-	const response = await authFetch(removePostURL, {
+	const response = await authFetch(deletePostURL, {
 		method
 	})
-
-	// const post = await response.json();
-	// console.log(post);
 
 	return await response.json();
 }

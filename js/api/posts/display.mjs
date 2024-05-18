@@ -27,11 +27,13 @@ export async function displayPosts() {
 	 const title = el.title;
 	 const body = el.body;
 	 const id = el.id;
+	 const imageURL = el.media && el.media.url ? el.media.url : "https://images.unsplash.com/photo-1558293842-c0fd3db86157?q=80&w=2929&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"; 
 
-	 return `<div class="card shadow mt-5 col-10 col-lg-15 mx-3 mb-3 d-flex">
-	 <div class="card-body flex-fill">
+	 return `<div class="card shadow mt-5 mx-3 mb-3 col-md-8 col-lg-6 col-xl-8">
+	 <div class="card-body row">
 			 <a href="/post/index.html?id=${id}">${title}</a>
 			 <p>${body}</p>
+			 <img src=${imageURL} />
 	 </div>
    </div>`;
 	});
@@ -52,19 +54,18 @@ export async function displaySinglePost(id) {
         const body = singlePost.data.body ? singlePost.data.body : "No description added";
 		const media = singlePost.data.media?.url ? singlePost.data.media.url : "https://images.unsplash.com/photo-1558293842-c0fd3db86157?q=80&w=2929&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"; 
 		
-console.log(media)
+
 		//display the post on the page
 		const singlePostContainer = document.querySelector("#single-post-container");
 
-		console.log(singlePostContainer)
-	
         const postHTML = `
             <div class="card shadow mt-5 mx-3 mb-3 col-md-8 col-lg-6 col-xl-8">
                 <div class="card-body row">
-                    <h1>${title}</h1>
+                    <h2>${title}</h2>
                     <p>${body}</p>
 					<img src=${media} />
 					<a href="/update/?id=${id}" class="btn btn-primary mt-2">Edit</a>
+					<button id="delete-btn" class="btn btn-outline-danger mt-3" type="submit">Delete</button>
                 </div>
             </div>`;
 
@@ -87,15 +88,9 @@ console.log(media)
 	 //logs correct single post
 	*/
 	
-
-
 //get a single post by its ID
 export async function getPost(id) {
 
-
-	//add error handling
-	// const response = await authFetch`${API_BASE}${API_POSTS}/${id}`;
-	// return await response.json();
 
 	const getPostURL = `${API_BASE}${API_POSTS}/${id}`;
 	const response = await authFetch(getPostURL)

@@ -12,21 +12,20 @@ export async function updatePost(postData) {
 		body: JSON.stringify(postData)
 	})
 
-	// const post = await response.json();
-	// console.log(post);
-
 	return await response.json();
 }
 
+
+
 export function updatePostListener() {
 	document.addEventListener("DOMContentLoaded", () => {
-		const postForm = document.getElementById("updateForm");
+		const updateForm = document.getElementById("updateForm");
 
-	
-		postForm.addEventListener("submit", async (event) => {
+
+		updateForm.addEventListener("submit", async (event) => {
 			event.preventDefault();
 	
-			const formData = new FormData(postForm);
+			const formData = new FormData(updateForm);
 			const postData = {
 				title: formData.get("update-title"),
 				body: formData.get("update-body"),
@@ -39,7 +38,8 @@ export function updatePostListener() {
 				// Optionally, display a success message or redirect to another page
 				console.log("Post updated successfully!");
 				// Reset the form
-				postForm.reset();
+				updateForm.reset();
+		
 			} catch (error) {
 				console.error("Error updating post:", error);
 				// Optionally, display an error message to the user

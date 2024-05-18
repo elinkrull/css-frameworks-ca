@@ -10,7 +10,6 @@ export async function createPost(postData) {
 		method,
 		body: JSON.stringify(postData)
 	})
-
 	return await response.json();
 }
 
@@ -30,7 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
 			// image: formData.get("post-image"),
             // Add more properties as needed
         };
-
         try {
             await createPost(postData);
             // Optionally, display a success message or redirect to another page
