@@ -9,10 +9,10 @@ export async function getPosts() {
 }
 
 // get posts as an array
-async function getPostData() {
-	const posts = await getPosts();
-	console.log(posts.data);
-};
+// async function getPostData() {
+// 	const posts = await getPosts();
+// 	console.log(posts.data);
+// };
 
 // getPostData();
 
@@ -90,8 +90,7 @@ export async function displaySinglePost(id) {
 	
 //get a single post by its ID
 export async function getPost(id) {
-
-
+	console.log(id)
 	const getPostURL = `${API_BASE}${API_POSTS}/${id}`;
 	const response = await authFetch(getPostURL)
 	return await response.json();

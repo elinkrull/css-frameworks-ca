@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
         };
         try {
             await createPost(postData);
+           
             // Optionally, display a success message or redirect to another page
             console.log("Post created successfully!");
             // Reset the form

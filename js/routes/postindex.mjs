@@ -8,3 +8,4 @@ post.displayPosts()
 // post.getPost(1740).then(console.log)
 
 post.createPostListener()
+
