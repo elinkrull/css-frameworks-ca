@@ -8,7 +8,7 @@
 	<title>PlantPals | Update Post Page</title>
 	<meta name="description" content="Here you can see edit the blogpost you have written">
 	<link rel="stylesheet" href="../dist/css/index.css">
-	<script defer type="module" src="../js/routes/updatepost.mjs"></script>
+	<script type="module" src="../js/routes/updatepost.mjs"></script>
 	<!-- <script defer src="node_modules/bootstrap/dist/js/bootstrap.js"></script> -->
 	<script src="https://kit.fontawesome.com/727f4fec37.js" crossorigin="anonymous"></script>
 </head>
@@ -59,7 +59,7 @@
 					<div class="container">
 						<div class="row col-md-8 col-lg-4 col-xl-5">
 							<h3 class="my-5"> Edit post</h3>
-							<form id="updateForm" class="was-validated">
+							<form method="post" id="updateForm" class="was-validated">
 
 								<div class="mb-3">
 									<label for="post-title" class="form-label"></label>
@@ -74,6 +74,14 @@
 									<label for="post-body" class="form-label"></label>
 									<input type="text" name="update-body" id="update-body" class="form-control pb-5"
 										placeholder="Add text" required>
+									<!-- <div class="invalid-feedback">
+									You must write something here
+								</div> -->
+								</div>
+
+								<div class="mb-3">
+									<label for="post-id" class="form-label"></label>
+									<input type="text" name="update-id" id="postId" class="form-control pb-5" hidden>
 									<!-- <div class="invalid-feedback">
 									You must write something here
 								</div> -->

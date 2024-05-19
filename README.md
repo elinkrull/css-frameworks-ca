@@ -42,7 +42,7 @@ https://trello.com/b/fTdt9Y8R/js2-ca
 1. Clone the repo:
 
 ```bash
-git clone 
+git clone https://github.com/elinkrull/js2/tree/js2
 ```
 
 ### Running
