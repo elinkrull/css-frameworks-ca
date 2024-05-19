@@ -46,7 +46,7 @@ export async function displayPosts() {
 
    //Function to display a single blog post by its id
 export async function displaySinglePost(id) {
-	console.log(id)
+
     try {
 		//fetch the post from the API
         const singlePost = await getPost(id);

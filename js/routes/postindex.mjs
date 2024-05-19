@@ -1,11 +1,11 @@
 
 import * as post from "../api/posts/index.mjs";
+import { filterPostsListener } from "./filter.mjs";
 
 post.getPosts().then(console.log)
 
 post.displayPosts()
 
-// post.getPost(1740).then(console.log)
-
 post.createPostListener()
 
+filterPostsListener()
