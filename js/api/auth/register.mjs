@@ -1,5 +1,5 @@
-import { API_BASE, API_AUTH, API_REGISTER } from "../constants.js";
-import { authFetch } from "../fetch.js";
+import { API_BASE, API_AUTH, API_REGISTER } from "../constants.mjs";
+import { authFetch } from "../authfetch.mjs";
 
 //register user function
 export async function register(name, email, password) {

@@ -1,6 +1,5 @@
-import { login } from "../../api/auth/login.js";
-import { register } from "../../api/auth/register.js";
-import { getPosts } from "../../api/posts/get.js";
+import { login } from "../../api/auth/login.mjs";
+import { register } from "../../api/auth/register.mjs";
 
 export async function onAuth(event) {
 	event.preventDefault();
@@ -13,7 +12,4 @@ export async function onAuth(event) {
 	}
 	// registerUser(name, email, password);
 	login(email, password);
-
-	const posts = await getPosts();
-	console.log(posts);
 }

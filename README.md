@@ -42,7 +42,7 @@ https://trello.com/b/fTdt9Y8R/js2-ca
 1. Clone the repo:
 
 ```bash
-git clone 
+git clone https://github.com/elinkrull/js2/tree/js2
 ```
 
 ### Running
@@ -59,3 +59,20 @@ Open a pull request so that the code can be reviewed.
 
 ## Acknowledgments
 
+
+
+Private Notes:
+
+* When we use async await, we generally want to have our code wrapped in try catch code blocks.
+
+ex.
+try {
+  // This is the code that will run
+} catch (error) {
+  // This is where we can handle errors
+} finally {
+  // This code will execute at the end regardless of
+  // whether we had an error or not
+}
+
+* avoid using innerHTML becuase it can read js and then you can get bugs in the code.

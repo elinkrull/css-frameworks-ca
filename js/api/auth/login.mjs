@@ -1,6 +1,6 @@
-import { save } from "../../storage/save.js"
-import { API_BASE, API_AUTH, API_LOGIN } from "../constants.js";
-import { authFetch } from "../fetch.js";
+import { save } from "../../storage/save.mjs"
+import { API_BASE, API_AUTH, API_LOGIN } from "../constants.mjs";
+import { authFetch } from "../authfetch.mjs";
 
 // // login user function
 export async function login(email, password) {
@@ -15,6 +15,7 @@ export async function login(email, password) {
 			const { accessToken, ...profile } = (await response.json()).data;
 			save("token", accessToken);
 			save("profile", profile);
+			window.location.href ="./posts/index.html";
 			return profile;
 		}
 		throw new Error("Could not login");

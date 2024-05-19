@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PlantPals | Feed Page</title>
+	<meta name="description"
+		content="Here you can see the posts that other peolpe you follow have postet in PlantPals, and you can also write a new post to your own profile">
+	<link rel="stylesheet" href="../dist/css/index.css">
+	<script defer type="module" src="../js/routes/postindex.mjs"></script>
+	<!-- <script defer src="node_modules/bootstrap/dist/js/bootstrap.js"></script> -->
+	<script src="https://kit.fontawesome.com/727f4fec37.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="min-vh-100">
+	<header class="bg-primary">
+		<nav class="navbar navbar-light justify-content-evenly">
+			<div>
+				<h1>PlantPals</h1>
+			</div>
+		</nav>
+	</header>
+	<!-- sidebar start -->
+	<div class="container-fluid">
+		<div class="row flex-nowrap">
+			<div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-white">
+				<div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+
+					<ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+						id="menu">
+						<li class="nav-item">
+							<a href="../profile/index.html" class="nav-link align-middle px-0">
+								<i class="fs-4 bi-house"></i> <span class="ms-2 d-none d-sm-inline fs-4">Profile</span>
+							</a>
+						</li>
+
+						<li class="nav-item">
+							<a href="../index.html" class="nav-link align-middle px-0">
+								<i class="fs-4 bi-house"></i> <span class="ms-2 d-none d-sm-inline fs-4">Log out</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col py-3">
+
+				<!-- sidebar end -->
+				<main>
+
+					<!-- Create new post-->
+					<div class="container">
+						<div class="row col-md-8 col-lg-4 col-xl-5">
+							<h3 class="my-5"> Add new post</h3>
+							<form id="postForm" class="was-validated">
+
+								<div class="mb-3">
+									<label for="post-title" class="form-label"></label>
+									<input type="text" name="post-title" id="post-title" class="form-control"
+										placeholder="Add title" required>
+									<!-- <div class="invalid-feedback">
+										You must add a title
+									</div> -->
+								</div>
+
+								<div class="mb-3">
+									<label for="post-body" class="form-label"></label>
+									<input type="text" name="post-body" id="post-body" class="form-control pb-5"
+										placeholder="Add text" required>
+									<!-- <div class="invalid-feedback">
+										You must write something here
+									</div> -->
+								</div>
+
+								<!-- <div class="mb-3">
+									<label for="post-image" class="form-label"></label>
+									<input type="url" name="post-image" id="post-image" class="form-control pb-5"
+										placeholder="Add image/url">
+								</div> -->
+
+								<div class="mb-3">
+									<button class="btn btn-primary" type="submit">Post</button>
+								</div>
+							</form>
+						</div>
+					</div>
+
+					<!-- create new post end -->
+
+					<!-- sorting post section start-->
+					<div class="container">
+						<h3 class="mt-5">Feed</h3>
+						<div class="col-10 col-lg-15 mb-3">
+							<div class="mt-5 col-5 col-md-4">
+								<!-- filter section start-->
+								<div class="mb-3">
+									<button id="filter-image-btn" class="btn btn-primary" type="submit">Display only
+										posts
+										with image</button>
+								</div>
+								<!-- <div class="mb-3">
+									<button class="btn btn-primary" type="submit">Display only posts
+										with
+										comments</button>
+								</div> -->
+								<!-- filter section end-->
+							</div>
+							<form class="my-2 my-lg-0">
+								<input class="form-control mr-sm-2 mb-3 mt-5" type="search" placeholder="Search"
+									aria-label="Search">
+								<button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+							</form>
+						</div>
+					</div>
+					<!-- sorting post section end-->
+
+					<!-- feed with all posts starts -->
+					<div id="display-posts-container">
+
+					</div>
+					<!-- feed with all posts end -->
+				</main>
+
+			</div>
+		</div>
+	</div>
+	<footer class="bg-primary p-5">
+
+	</footer>
+
+</body>
+
+</html>
