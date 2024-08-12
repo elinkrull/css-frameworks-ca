@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PlantPals | Update Post Page</title>
+	<meta name="description" content="Here you can see edit the blogpost you have written">
+	<link rel="stylesheet" href="../dist/css/index.css">
+	<script type="module" src="../js/routes/updatepost.mjs"></script>
+	<!-- <script defer src="node_modules/bootstrap/dist/js/bootstrap.js"></script> -->
+	<script src="https://kit.fontawesome.com/727f4fec37.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="min-vh-100">
+	<header class="bg-primary">
+		<nav class="navbar navbar-light justify-content-evenly">
+			<div>
+				<h1>PlantPals</h1>
+			</div>
+		</nav>
+	</header>
+	<!-- sidebar start -->
+	<div class="container-fluid">
+		<div class="row flex-nowrap">
+			<div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-white">
+				<div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+
+					<ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+						id="menu">
+
+						<li class="nav-item">
+							<a href="../posts/index.html" class="nav-link align-middle px-0">
+								<i class="fs-4 bi-house"></i> <span class="ms-2 d-none d-sm-inline fs-4">Home</span>
+							</a>
+						</li>
+
+						<li class="nav-item">
+							<a href="../profile/index.html" class="nav-link align-middle px-0">
+								<i class="fs-4 bi-house"></i> <span class="ms-2 d-none d-sm-inline fs-4">Profile</span>
+							</a>
+						</li>
+
+						<li class="nav-item">
+							<a href="../index.html" class="nav-link align-middle px-0">
+								<i class="fs-4 bi-house"></i> <span class="ms-2 d-none d-sm-inline fs-4">Log out</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col py-3">
+
+				<!-- sidebar end -->
+				<main>
+
+					<!-- Edit post-->
+					<div class="container">
+						<div class="row col-md-8 col-lg-4 col-xl-5">
+							<h3 class="my-5"> Edit post</h3>
+							<form method="post" id="updateForm" class="was-validated">
+
+								<div class="mb-3">
+									<label for="post-title" class="form-label"></label>
+									<input type="text" name="update-title" id="update-title" class="form-control"
+										placeholder="Add title" required>
+									<!-- <div class="invalid-feedback">
+									You must add a title
+								</div> -->
+								</div>
+
+								<div class="mb-3">
+									<label for="post-body" class="form-label"></label>
+									<input type="text" name="update-body" id="update-body" class="form-control pb-5"
+										placeholder="Add text" required>
+									<!-- <div class="invalid-feedback">
+									You must write something here
+								</div> -->
+								</div>
+
+								<div class="mb-3">
+									<label for="post-id" class="form-label"></label>
+									<input type="text" name="update-id" id="postId" class="form-control pb-5" hidden>
+									<!-- <div class="invalid-feedback">
+									You must write something here
+								</div> -->
+								</div>
+
+								<!-- <div class="mb-3">
+									<label for="post-image" class="form-label"></label>
+									<input type="url" name="post-image" id="post-image" class="form-control pb-5"
+										placeholder="Add image/url">
+								</div> -->
+
+								<div class="mb-3">
+									<button class="btn btn-primary" type="submit">Save</button>
+								</div>
+							</form>
+						</div>
+					</div>
+					<!-- create new post end -->
+
+				</main>
+
+			</div>
+		</div>
+	</div>
+	<footer class="bg-primary p-5">
+
+	</footer>
+
+</body>
+
+</html>

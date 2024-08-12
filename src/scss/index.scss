@@ -1,13 +1,13 @@
 
 // Configuration
-@import "../../node_modules/bootstrap/scss/functions";
-@import "../../node_modules/bootstrap/scss/variables";
-@import "../../node_modules/bootstrap/scss/variables-dark";
+// @import "../../node_modules/bootstrap/scss/functions";
+// @import "../../node_modules/bootstrap/scss/variables";
+// @import "../../node_modules/bootstrap/scss/variables-dark";
 @import "variables";
-@import "variables-dark";
-@import "../../node_modules/bootstrap/scss/maps";
-@import "../../node_modules/bootstrap/scss/mixins";
-@import "../../node_modules/bootstrap/scss/utilities";
+// @import "variables-dark";
+// @import "../../node_modules/bootstrap/scss/maps";
+// @import "../../node_modules/bootstrap/scss/mixins";
+// @import "../../node_modules/bootstrap/scss/utilities";
 
 
 //bootstrap mainfile
@@ -15,19 +15,23 @@
 
 
 //custom files
-@import "buttons";
 
+.watering-woman {
+	height: 500px;
+	width: 1100px;
+	object-fit: cover;
+	position: relative;
+}
 
-// .overlay-container {
-// 	position: relative;
-//   }
+.profile-picture {
+	height: 250px;
+	position: absolute;
+	bottom: 90px;
+	left: 190px;
+}
 
-//   .overlay-image {
-// 	position: absolute;
-// 	top: 0;
-// 	left: 0;
-// 	width: 100%;
-// 	height: 100%;
-// 	object-fit: cover; 
-//   }
+h1 {
+	color: white;
+}
+
 

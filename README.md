@@ -1,20 +1,31 @@
 
 # PlantPals Social media platform
 
-The purpose of this project was to create and build a responsive front end for a social media application and with the knowledge of Bootstrap and SASS.
+The purpose of this project was to create and build a responsive front end for a social media application with the knowledge of JavaScript techniques.
 
 ## Description
 
-In this brief we were asked to create 3 pages in HTML using Bootstrap and SASS:
+In this brief we were asked to use the provided API and API documentation, to create a functioning user interface that allows for viewing, posting, editing and deleting social media content.
 
-1.Homepage 
-The authentication page should have a form to login or register to the application. Ensure to include HTML form validation and use /profile as the action attribute. Password must have a minimum length of 8 characters.
+Social API routes require authorisation via JWT (JSON Web Tokens).
 
-2. Feed page
-The feed page should have a list of posts thumbnails, a search bar, sort options and a form to create a new post. You may add additional design features beyond these requirements.
+Required features
+The following user stories are required for a passing submission:
 
-3.Profile page
-The profile page should have a profile image, username, list of user posts, follow button and an area to display following/followers.
+1. User with @noroff.no or @stud.noroff.no email can register profile
+2. Registered user can login/authenticate profile
+3. User can view a post content feed
+4. User can filter the post content feed
+5. User can search the post content feed
+6. User can view a post content item by ID
+7. User can create a post content item
+8. User can update a post content item
+9. User can delete a post content item
+
+
+## Planning the project
+
+https://trello.com/b/fTdt9Y8R/js2-ca
 
 ## Built With
 
@@ -22,6 +33,7 @@ The profile page should have a profile image, username, list of user posts, foll
 - HTML
 - Bootstrap
 - SASS
+- Javascript
 
 ## Getting Started
 
@@ -30,7 +42,7 @@ The profile page should have a profile image, username, list of user posts, foll
 1. Clone the repo:
 
 ```bash
-git clone https://github.com/elinkrull/css-frameworks-ca
+git clone https://github.com/elinkrull/js2/tree/js2
 ```
 
 ### Running
@@ -47,6 +59,20 @@ Open a pull request so that the code can be reviewed.
 
 ## Acknowledgments
 
-I would like to thank teacher Talitha Kruger for all the help when I was struggling with installing node and SASS.
 
-I would also like to thank to for giving me feedback on the project, and other fellow students for help and feedback in the class chat in moodle.
+
+Private Notes:
+
+* When we use async await, we generally want to have our code wrapped in try catch code blocks.
+
+ex.
+try {
+  // This is the code that will run
+} catch (error) {
+  // This is where we can handle errors
+} finally {
+  // This code will execute at the end regardless of
+  // whether we had an error or not
+}
+
+* avoid using innerHTML becuase it can read js and then you can get bugs in the code.
